@@ -1,0 +1,42 @@
+CREATE TABLE Clientes (
+    Id_Clientes INT PRIMARY KEY NOT NULL,
+    ds_Cliente VARCHAR(100) NOT NULL,
+    dt_Nascimento DATE NOT NULL,
+    nr_CPF VARCHAR(11) NOT NULL,
+    nr_Cep VARCHAR(7) NOT NULL,
+    ds_Endereco VARCHAR(100) NOT NULL,
+    nr_Numero VARCHAR(10),
+    ds_Complemento VARCHAR(45),
+    ds_Bairro VARCHAR(60),
+    ds_Cidade VARCHAR(70),
+    ds_UF CHAR(2) NOT NULL,
+    nr_Telefone VARCHAR(12),
+    nr_Telefone2 VARCHAR(12),
+    ds_Bbs VARCHAR(255)
+);
+
+CREATE TABLE Profissionais (
+    Id_Profissionais INT PRIMARY KEY NOT NULL,
+    ds_Profissionais VARCHAR(100) NOT NULL,
+    ds_Especialidade VARCHAR(45),
+    nr_Contato VARCHAR(12)
+);
+
+CREATE TABLE Usuarios (
+    Id_Usuarios INT PRIMARY KEY NOT NULL,
+    ds_Usuario VARCHAR(45) NOT NULL,
+    ds_Login VARCHAR(45) UNIQUE NOT NULL,
+    ds_Senha VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE Agendamento (
+    Id_Agendamento INT PRIMARY KEY NOT NULL,
+    dt_Data DATE NOT NULL,
+    hr_Hora CHAR(5) NOT NULL,
+    Id_Cliente INT,
+    Id_Profissional INT,
+    Id_Usuario INT,
+    CONSTRAINT fk_Cliente_Agendamento FOREIGN KEY (Id_Cliente) REFERENCES Clientes(Id_Clientes),
+    CONSTRAINT fk_Profissional_Agendamento FOREIGN KEY (Id_Profissional) REFERENCES Profissionais(Id_Profissionais),
+    CONSTRAINT fk_Usuario_Agendamento FOREIGN KEY (Id_Usuario) REFERENCES Usuarios(Id_Usuarios)
+);
