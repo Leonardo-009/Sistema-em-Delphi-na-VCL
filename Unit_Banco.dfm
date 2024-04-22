@@ -1,0 +1,20 @@
+object DataModule1: TDataModule1
+  Height = 480
+  Width = 640
+  object ADOConnection1: TADOConnection
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Password=123456Sc;Persist Security Info=True' +
+      ';User ID=sa;Initial Catalog=Agenda;Data Source=DESKTOP-4J2T766'
+    Provider = 'SQLOLEDB.1'
+    Left = 96
+    Top = 88
+  end
+  object ADOQuery1: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM Clientes')
+    Left = 200
+    Top = 88
+  end
+end

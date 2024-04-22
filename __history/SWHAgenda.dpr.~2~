@@ -1,0 +1,14 @@
+program SWHAgenda;
+
+uses
+  Vcl.Forms,
+  Unit_principal in 'Unit_principal.pas' {Form_Principal};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm_Principal, Form_Principal);
+  Application.Run;
+end.

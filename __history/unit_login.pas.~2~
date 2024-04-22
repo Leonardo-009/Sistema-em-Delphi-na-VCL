@@ -1,0 +1,52 @@
+unit unit_login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TForm_login = class(TForm)
+    Pnl_fundo: TPanel;
+    Pnl_lateral: TPanel;
+    lbl_bemvindo: TLabel;
+    lbl_nome_sistema: TLabel;
+    lbl_autor: TLabel;
+    lbl_versao: TLabel;
+    lbl_digite: TLabel;
+    lbl_usuario: TLabel;
+    pnl_usuario: TPanel;
+    edt_usuario: TEdit;
+    pnl_botao: TPanel;
+    btn_confirma: TButton;
+    btn_encerrar: TSpeedButton;
+    pnl_senha: TPanel;
+    lbl_senha: TLabel;
+    edt_senha: TEdit;
+    procedure btn_encerrarClick(Sender: TObject);
+    procedure btn_confirmaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_login: TForm_login;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm_login.btn_confirmaClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TForm_login.btn_encerrarClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+end.

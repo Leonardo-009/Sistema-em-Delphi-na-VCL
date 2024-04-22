@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/21 00:19:29.000.241,=I:\projetosdelphi\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 00:19:53.000.858,I:\Sistema_Completo_em_Delphi\Unit_principal.dfm=I:\projetosdelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/04/21 00:19:53.000.858,I:\Sistema_Completo_em_Delphi\Unit_principal.pas=I:\projetosdelphi\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 00:20:24.000.382,I:\Sistema_Completo_em_Delphi\SWHAgenda.dproj=I:\projetosdelphi\Project1.dproj</Transaction>
+    <Transaction>2024/04/21 00:29:10.000.420,=I:\Sistema_Completo_em_Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 00:37:36.000.614,I:\Sistema_Completo_em_Delphi\Unit1.dfm=I:\Sistema_Completo_em_Delphi\Unit_Banco.dfm</Transaction>
+    <Transaction>2024/04/21 00:37:36.000.614,I:\Sistema_Completo_em_Delphi\Unit1.pas=I:\Sistema_Completo_em_Delphi\Unit_Banco.pas</Transaction>
+    <Transaction>2024/04/21 11:01:34.000.703,=I:\Sistema_Completo_em_Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 12:52:16.000.325,I:\Sistema_Completo_em_Delphi\unit_login.dfm=I:\Sistema_Completo_em_Delphi\Unit1.dfm</Transaction>
+    <Transaction>2024/04/21 12:52:16.000.325,I:\Sistema_Completo_em_Delphi\unit_login.pas=I:\Sistema_Completo_em_Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 13:35:04.187,=I:\Sistema_Completo_em_Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 13:37:21.001,I:\Sistema_Completo_em_Delphi\Unit_confgurar_servidor.dfm=I:\Sistema_Completo_em_Delphi\Unit1.dfm</Transaction>
+    <Transaction>2024/04/21 13:37:21.001,I:\Sistema_Completo_em_Delphi\Unit_confgurar_servidor.pas=I:\Sistema_Completo_em_Delphi\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

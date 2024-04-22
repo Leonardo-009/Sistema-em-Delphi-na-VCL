@@ -1,0 +1,18 @@
+program SWHAgenda;
+
+uses
+  Vcl.Forms,
+  Unit_principal in 'Unit_principal.pas' {Form_Principal},
+  Unit_Banco in 'Unit_Banco.pas' {DataModule1: TDataModule},
+  unit_login in 'unit_login.pas' {Form_login};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm_Principal, Form_Principal);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TForm_login, Form_login);
+  Application.Run;
+end.
